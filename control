@@ -1,0 +1,13 @@
+Package: com.conorthedev.dragspring
+Name: Dragspring
+Depends: mobilesubstrate, ws.hbang.common (>= 1.11), org.thebigboss.libcolorpicker
+Version: 1.2
+Architecture: iphoneos-arm
+Conflicts: com.sassoty.pulltorespring
+Description: Drag down from the top of settings to respring!
+Maintainer: ConorTheDev
+Author: ConorTheDev
+Section: Tweaks
+Icon: https://repo.conorthedev.com/img/dragspring.png
+Depiction: https://repo.conorthedev.com/package/com.conorthedev.dragspring
+SileoDepiction: https://repo.conorthedev.com/SileoDepictions/Dragspring
