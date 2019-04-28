@@ -11,7 +11,7 @@ DragspringPrefs_FRAMEWORKS = UIKit
 DragspringPrefs_PRIVATE_FRAMEWORKS = Preferences
 DragspringPrefs_EXTRA_FRAMEWORKS = Cephei CepheiPrefs
 DragspringPrefs_LIBRARIES = colorpicker
-ARCHS = armv7 arm64 arm64e
+ARCHS = arm64 arm64e
 
 include $(THEOS_MAKE_PATH)/bundle.mk
 

@@ -1,7 +1,7 @@
 Package: com.conorthedev.dragspring
 Name: Dragspring
-Depends: mobilesubstrate, ws.hbang.common (>= 1.11), org.thebigboss.libcolorpicker
-Version: 1.2
+Depends: mobilesubstrate, ws.hbang.common (>= 1.11), me.nepeta.libcolorpicker
+Version: 1.2.1
 Architecture: iphoneos-arm
 Conflicts: com.sassoty.pulltorespring
 Description: Drag down from the top of settings to respring!

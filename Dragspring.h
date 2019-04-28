@@ -21,6 +21,6 @@
 @property (nonatomic, assign) PSListController *listController;
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
 + (instancetype)sharedInstance;
-- (void)refreshControlValueChangedFORDAYS:(UIRefreshControl *)refreshControl;
+- (void)refreshControlValueChanged:(UIRefreshControl *)refreshControl;
 - (void)updateRefreshControlExistence:(BOOL)shouldExist;
 @end

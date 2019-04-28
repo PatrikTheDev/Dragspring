@@ -89,7 +89,7 @@
 				<key>libcolorpicker</key>
 				<dict>
 					<key>defaults</key>
-					<string>com.conorthedev.dragspringprefs</string>
+					<string>com.conorthedev.dragspringprefs-colors</string>
 					<key>key</key>
 					<string>kTintColor</string>
 					<key>fallback</key>

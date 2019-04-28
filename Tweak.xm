@@ -110,7 +110,8 @@ static UIRefreshControl *createRefreshControlWithListController(PSListController
 
 static void loadPrefs() {
 	NSMutableDictionary *settings = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.conorthedev.dragspringprefs.plist"];
-
+	NSMutableDictionary *colors = [[NSMutableDictionary alloc] initWithContentsOfFile:@"/var/mobile/Library/Preferences/com.conorthedev.dragspringprefs-colors.plist"];
+	
 	enabled = [settings objectForKey:@"kEnabled"] ?[[settings objectForKey:@"kEnabled"] boolValue] : YES;
 	textEnabled = [settings objectForKey:@"kTextEnabled"] ?[[settings objectForKey:@"kTextEnabled"] boolValue] : YES;
 	spinSpinner = [settings objectForKey:@"kSpinSpinner"] ?[[settings objectForKey:@"kSpinSpinner"] boolValue] : YES;
@@ -118,7 +119,7 @@ static void loadPrefs() {
 	subtitlePre = [[settings objectForKey:@"kCustomText1"] stringValue] ?[[settings objectForKey:@"kCustomText1"] stringValue] : @"Respring!";
 	subtitleDuring = [[settings objectForKey:@"kCustomText2"] stringValue] ?[[settings objectForKey:@"kCustomText2"] stringValue] : @"Respringing...";
 	hapticFeedback = [settings objectForKey:@"kHapticFeedback"] ?[[settings objectForKey:@"kHapticFeedback"] boolValue] : YES;
-	NSString *color = [[settings objectForKey:@"kTintColor"] stringValue] ?[[settings objectForKey:@"kTintColor"] stringValue] : @"#FFFFFF";
+	NSString *color = [[colors objectForKey:@"kTintColor"] stringValue] ?[[colors objectForKey:@"kTintColor"] stringValue] : @"#FFFFFF";
 	customColor = LCPParseColorString(color, color);
 }
 
@@ -130,7 +131,7 @@ static void loadPrefs() {
 	%orig;
 	if (!dpkgInvalid) return;
 	UIAlertController *alertController = [UIAlertController
-	                                      alertControllerWithTitle:@"😡😡😡"
+	                                      alertControllerWithTitle:@"Dragspring was pirated!"
 	                                      message:@"The build of Dragspring you're using comes from an untrusted source. Pirate repositories can distribute malware and you will get subpar user experience using any tweaks from them.\nRemember: Dragspring is free. Uninstall this build and install the proper version of Dragspring from:\nhttps://repo.conorthedev.com/\n"
 	                                      preferredStyle:UIAlertControllerStyleAlert
 	                                     ];
