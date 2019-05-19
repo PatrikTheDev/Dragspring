@@ -1,13 +1,12 @@
-Package: com.patakopecek.dragspring
-Name: Dragreload
+Package: com.conorthedev.dragspring
+Name: Dragspring
 Depends: mobilesubstrate, ws.hbang.common (>= 1.11), me.nepeta.libcolorpicker
 Version: 1.2.1
 Architecture: iphoneos-arm
 Conflicts: com.sassoty.pulltorespring
-Replaces: com.conorthedev.dragspring
-Description: Drag down from the top of settings to sbreload! It is a fork of Dragspring by ConorTheDev
-Maintainer: Patrik Svoboda
-Author: Patrik Svoboda
+Description: Drag down from the top of settings to respring!
+Maintainer: ConorTheDev
+Author: ConorTheDev
 Section: Tweaks
 Icon: https://repo.conorthedev.com/img/dragspring.png
 Depiction: https://repo.conorthedev.com/package/com.conorthedev.dragspring
