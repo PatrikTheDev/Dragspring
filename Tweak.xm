@@ -86,8 +86,7 @@ static UIRefreshControl *createRefreshControlWithListController(PSListController
 		dispatch_async(dispatch_get_main_queue(), ^{
 			[refreshControl endRefreshing];
 			NSTask *t = [[[NSTask alloc] init] autorelease];
-			[t setLaunchPath:@"/usr/bin/killall"];
-			[t setArguments:[NSArray arrayWithObjects:@"backboardd", nil]];
+			[t setLaunchPath:@"/usr/bin/sbreload"];
 			[t launch];
 		});
 
