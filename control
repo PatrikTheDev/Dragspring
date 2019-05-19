@@ -5,7 +5,7 @@ Version: 1.2.1
 Architecture: iphoneos-arm
 Conflicts: com.sassoty.pulltorespring
 Replaces: com.conorthedev.dragspring
-Description: Drag down from the top of settings to sbreload! It is a for of Dragspring by ConorTheDev
+Description: Drag down from the top of settings to sbreload! It is a fork of Dragspring by ConorTheDev
 Maintainer: Patrik Svoboda
 Author: Patrik Svoboda
 Section: Tweaks
